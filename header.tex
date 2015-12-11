@@ -1,0 +1,26 @@
+\usepackage{titlesec}
+\titleformat{\chapter}[hang]{\bfseries\huge}{\thechapter.}{2pc}{}
+\titlelabel{\thetitle.\:}
+
+\usepackage{chngcntr}
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
+
+%\renewcommand{\figurename}{Fig.}
+\usepackage[labelfont=bf,justification=centering]{caption}
+
+\usepackage{float}
+\floatstyle{plaintop}
+\restylefloat{table}
+
+\usepackage{wrapfig}
+
+% \usepackage{titling}
+% \pretitle{\begin{center}\LARGE\bfseries}
+% \posttitle{\par\end{center}\vskip 0.5em \ Bachelor Thesis in Physics \ by}
+% \preauthor{\begin{center}
+% \large \lineskip 0.5em%
+% \begin{tabular}[t]{c}}
+% \postauthor{\end{tabular}\par\end{center}}
+% \predate{\begin{center}\large}
+% \postdate{\par\end{center}}

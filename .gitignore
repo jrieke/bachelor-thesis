@@ -1,0 +1,12 @@
+*.pdf
+*.bib
+/images
+test.tex
+
+default-template.tex
+
+test.aux
+test.lof
+test.log
+test.out
+test.toc
