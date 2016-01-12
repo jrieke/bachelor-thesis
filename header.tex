@@ -1,23 +1,47 @@
+% \usepackage[onehalfspacing]{setspace}
+
 \usepackage{titlesec}
+% Set number format of titles
 \titleformat{\chapter}[hang]{\bfseries\huge}{\thechapter.}{2pc}{}
 \titlelabel{\thetitle.\:}
+% Decrease spacing above and below chapter titles
+\titlespacing*{\chapter}{0pt}{-10pt}{30pt}
 
+% Number figures for whole document and not chapter-wise
 \usepackage{chngcntr}
 \counterwithout{figure}{chapter}
 \counterwithout{table}{chapter}
+\counterwithout{equation}{chapter}
 
+% Change identifier in figure caption
 %\renewcommand{\figurename}{Fig.}
+
+% Center figure captions and make Figure bold
 \usepackage[labelfont=bf,justification=centering]{caption}
 
+% Put captions above tables
 \usepackage{float}
 \floatstyle{plaintop}
 \restylefloat{table}
 
-\usepackage{wrapfig}
+%\usepackage{wrapfig}
+
+% Increase spacing above and below figures/tables
+\setlength{\intextsep}{12mm}
+
+% Change names for lists
+\renewcommand{\listfigurename}{Figures}
+\renewcommand{\listtablename}{Tables}
+
+% Center figures
+% \makeatletter
+% \g@addto@macro\@floatboxreset\centering
+% \makeatother
+
 
 % \usepackage{titling}
-% \pretitle{\begin{center}\LARGE\bfseries}
-% \posttitle{\par\end{center}\vskip 0.5em \ Bachelor Thesis in Physics \ by}
+% \pretitle{\LARGE\bfseries}
+% \posttitle{\par\vskip 0.5em \ Bachelor Thesis in Physics \ by}
 % \preauthor{\begin{center}
 % \large \lineskip 0.5em%
 % \begin{tabular}[t]{c}}

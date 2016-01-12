@@ -1,4 +1,5 @@
 @echo off
-scholdoc test.md -o test.tex -H header.tex --number-sections
-xelatex test.tex
-test.pdf
+scholdoc bachelor-thesis.md -o bachelor-thesis.tex -H header.tex --number-sections
+postprocess bachelor-thesis.tex
+xelatex bachelor-thesis.tex
+bachelor-thesis.pdf
